@@ -1,0 +1,44 @@
+# 🚀 Dev Stack
+
+> Curated tools, technologies, and resources for developers building modern software.
+
+---
+
+## 🛠️ Technologies Used
+* **React (Vite)** - A fast frontend JavaScript library for building user interfaces.
+* **Tailwind CSS** - A utility-first CSS framework for rapid UI design.
+* **JavaScript (ES6+)** - Modern script logic and array methods.
+* **Git & GitHub** - Version control and code repository hosting.
+
+---
+
+## ✨ Key Features
+1. **Curated Tech Explorer:** Browse through a handpicked list of tools and frameworks used in modern software development.
+2. **Responsive Modern UI:** Fully optimized design layout using Tailwind CSS that looks great on all screens.
+3. **Interactive Navigation & Footer:** Quick access links, smooth transitions, and clean external references.
+
+---
+
+## 🧠 React Concepts & Questions
+
+### 1. What is JSX, and why is it used in React?
+**JSX** stands for JavaScript XML. It allows us to write HTML code directly inside JavaScript files. It is used because it makes writing and reading component structures much easier and cleaner than regular vanilla JavaScript.
+
+### 2. What is the difference between props and state?
+* **Props:** Data passed down from a parent component to a child component. They are read-only and cannot be changed by the child.
+* **State:** Local data managed inside a component. It can change over time, and when it changes, the component updates automatically.
+
+### 3. What does the useState hook do, and where did you use it in this project?
+The `useState` hook lets us store and update data inside a component. I used it to manage things like search inputs, toggles, or active selections.
+
+### 4. What does the useEffect hook do, and why did you need it to load the JSON data?
+`useEffect` lets us run side effects (like fetching data or talking to an API) after a component renders. We needed it to load JSON data properly without slowing down the initial page load.
+
+### 5. Why does every item in a .map() list need a unique key prop?
+React uses unique keys to track items in a list. When items are added, deleted, or reordered, keys help React know exactly which item changed, which makes the app faster and avoids bugs.
+
+### 6. What is conditional rendering? Show one place you used it (example: the empty stack message).
+Conditional rendering means showing or hiding elements based on a specific condition. 
+* *Example:* Showing an empty message if no items are found:
+  ```jsx
+  {tools.length === 0 && <p>No tools found!</p>}
