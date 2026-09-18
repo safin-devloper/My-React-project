@@ -44,7 +44,7 @@ const Nav = () => {
 
       </div>
     </nav>
-    nafiiiiiiiiii
+
   );
 };
 
