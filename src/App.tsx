@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import  { Suspense } from 'react';
 import Nav from './component/Nav';
 import Banner from './component/Banner';
 import TechCard from './component/Techcard/TechCard';

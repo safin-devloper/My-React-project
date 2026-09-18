@@ -1,4 +1,4 @@
-import React, { useState, use } from 'react';
+import { useState, use } from 'react';
 import type { Icard } from '../../types/CardType';
 
 interface TechCardProps {
@@ -18,7 +18,7 @@ const TechCard = ({ cardPromise }: TechCardProps) => {
         }
     };
  
-    const handleRemoveFromStack = (id: number) => {
+    const handleRemoveFromStack = (id: string | number) => {
         setSelectedStack(selectedStack.filter((item) => item.id !== id));
     };
  
@@ -50,7 +50,7 @@ const TechCard = ({ cardPromise }: TechCardProps) => {
                                     key={card.id} 
                                     className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative"
                                 >
-                              
+                                
                                     <div className="flex items-center justify-between mb-4">
                                         <img 
                                             src={card.icon} 
@@ -64,7 +64,7 @@ const TechCard = ({ cardPromise }: TechCardProps) => {
                                         )}
                                     </div>
 
-                                 
+                                   
                                     <div className="mb-2">
                                         <span className="inline-block px-2.5 py-0.5 bg-slate-100 text-slate-600 text-xs font-medium rounded-md">
                                             {card.category}
@@ -89,7 +89,7 @@ const TechCard = ({ cardPromise }: TechCardProps) => {
                                         </div>
                                     </div>
 
-                              
+                                
                                     <button 
                                         onClick={() => handleAddToStack(card)}
                                         disabled={isAdded}
