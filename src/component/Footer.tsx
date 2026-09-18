@@ -1,10 +1,9 @@
- 
-
-const Footer = () => {
+ const Footer = () => {
     return (
-        <footer className="bg-white border-t border-slate-100 pt-16 pb-10">
-            <div className="container mx-auto px-4">
+        <footer className="w-full bg-white border-t border-slate-100 pt-16 pb-10 mt-auto">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12">
+                    {/* Brand Section */}
                     <div className="lg:col-span-5 flex flex-col items-start">
                         <div className="flex items-center gap-2.5 mb-3">
                             <div className="w-7 h-7 rounded-lg bg-pink-600 flex items-center justify-center text-white font-bold text-xs tracking-wider">
@@ -32,8 +31,10 @@ const Footer = () => {
                         </div>
                     </div>
 
+                    {/* Spacer for large screens */}
                     <div className="hidden lg:block lg:col-span-2"></div>
 
+                    {/* Product Links */}
                     <div className="lg:col-span-2">
                         <h4 className="text-slate-900 text-xs font-bold tracking-wider uppercase mb-4">PRODUCT</h4>
                         <ul className="space-y-3 text-sm">
@@ -43,6 +44,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
+                    {/* Company Links */}
                     <div className="lg:col-span-3">
                         <h4 className="text-slate-900 text-xs font-bold tracking-wider uppercase mb-4">COMPANY</h4>
                         <ul className="space-y-3 text-sm">
@@ -53,6 +55,7 @@ const Footer = () => {
                     </div>
                 </div>
 
+                {/* Bottom Bar */}
                 <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
                     <p>© {new Date().getFullYear()} Dev Stack. All rights reserved.</p>
                     <div className="flex items-center gap-6">
