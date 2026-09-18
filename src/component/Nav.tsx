@@ -29,7 +29,7 @@ const Nav = () => {
           </button>
         </div>
 
-        {/* Mobile View: Sign Up & Hamburger Icon */}
+    
         <div className="flex md:hidden items-center gap-3">
           <button className="bg-[#db2777] text-white text-xs px-3 py-1.5 rounded-full">
             Sign Up
